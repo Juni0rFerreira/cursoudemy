@@ -74,10 +74,3 @@ class _PerguntaAppState extends State<PerguntaApp> {
     ));
   }
 }
-
-// class PerguntaApp extends StatefulWidget {
-//   @override
-//   PerguntaApp createState() {
-//     return PerguntaAppState();
-//   }
-// }
