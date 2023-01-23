@@ -41,18 +41,33 @@ class _PerguntaAppState extends State<PerguntaApp> {
       ),
       body: Column(
         children: <Widget>[
-          Text(perguntas[perguntaSelecionada]),
+          const SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: Text(
+              perguntas[perguntaSelecionada],
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           ElevatedButton(
             child: Text('Resposta1'),
-            onPressed: () => responder,
+            onPressed: () => responder(),
           ),
           ElevatedButton(
             child: Text('Resposta2'),
-            onPressed: () => responder,
+            onPressed: () => responder(),
           ),
           ElevatedButton(
             child: Text('Resposta3'),
-            onPressed: () => responder,
+            onPressed: () => responder(),
           ),
         ],
       ),
